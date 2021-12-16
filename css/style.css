@@ -1,0 +1,333 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: #cb0900;
+}
+h1{
+    font-family:Pokemon Solid;
+    color:#fdcd01;
+    font-size: 50px;
+    text-shadow:5px 5px 3px #3100f8  ;
+}
+
+.menu_horizontal{
+    list-style-type:none;
+    padding:0;
+    background-color:black ;
+    margin: 0px;
+    box-sizing: border-box;
+  
+
+}
+.menu_horizontal li{
+    display:inline;
+    color:whitesmoke;
+    display:inline;
+
+}
+.menu_horizontal li a{
+    color:#FFF;
+    padding:20px;
+    display: inline-block;
+    text-decoration:none;
+   transition: background .4s;
+
+ 
+
+}
+.menu_horizontal li a:hover{
+    background-color:red;
+    
+
+}
+.pokemon p{
+    background-color: black;
+    color: white;
+    font-family:Pokemon Solid;
+    padding: 5px 10px;
+   
+}
+#pokemons{
+    border: 2px solid #9b9494;
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float:left;
+   
+ 
+}
+.pokemon{
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+
+header{
+    font-family:Pokemon Solid;
+    color: black;
+}
+.produto{
+    width: 80px;
+    margin-bottom: 5px;
+    
+}
+.pokebola{
+    width: 20px;
+    height: 20px;
+ 
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction:row;
+    align-items: flex-end;
+    justify-content: space-between;
+   background-color: #cb0900;
+   align-content: center;
+   margin-left: auto;
+   margin-right: 1.21rem;
+   padding: 20px;
+  
+   font-size: 15px;
+   
+
+}
+.upper{
+    display: flex;
+    background-color: #cb0900;
+    align-items: center;
+    justify-content: space-between;
+}
+.upperleft{
+    background-color: #cb0900;
+    margin-right: auto;
+    margin-left: 1.21rem;
+}
+.cabecalho a{
+    padding: 5px;
+    color:#fdcd01;
+
+}
+.search_bar{  
+    position:relative;
+    bottom:20px;
+    margin-top: 35px;
+    display: inline-flex;
+    float: right;
+  }
+  .main_area{
+    position: relative;
+    right:250px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap
+}
+.display_area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+ 
+}
+.pokemons{
+    border: 2px solid #9b9494;
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    width: 300px;
+    height: 200px;
+    display: grid;
+   
+}
+aside{
+    width: 150px;
+    height: 100px;
+    
+}
+
+.aside_section {
+    position:relative;
+    bottom: 100px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+.aside_lendarios{
+    display: flex;
+    flex-direction: column;
+}
+.aside_lendarios_title{
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #9b9494;
+    margin-top: 50px;
+    padding-right: 90px;
+    padding-bottom: 5px;
+}
+.aside_lendarios ol li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.aside_lendarios ol li .position {
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+.aside_lendarios ol li img {
+    width: 60px;
+    margin-left: 10px;
+    margin-left: 5px;
+}
+.aaside_lendarios ol li p {
+    font-size: 20px;
+    margin-left: 5px;
+}
+.form {
+    background-color: #cb0900;
+    width: 220px;
+    height: 180px;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: #9b9494 3px 3px 5px;
+}
+.form-title {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+form .label {
+    font-size: 16px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+form .email {
+    height: 23px;
+    width: 190px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+form .button {
+    height: 30px;
+    width: 190px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #9b9494;
+    box-shadow: #9b9494 3px 3px 2px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:black;
+    color: #ffffff;
+}
+footer{
+    background: black;
+    position: relative;
+    top: 450px;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    font-family: "Open Sans";
+    padding-top: auto;
+    color:white;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+     max-width: 500px;
+     margin:10px auto;
+     line-height: 28px;
+     font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+
+}
+.socials li{
+    margin:0 10px;
+
+}
+.socials a{
+    text-decoration: none;
+    color: white;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition:color .4s ease;
+
+}
+.socials a:hover i{
+    color:white;
+    
+}
+.footer-bottom{
+    background: black;
+    width: 100vw;
+    padding:20px 0;
+    text-align: center;
+
+}
+.footer-bottom {
+   font-size:14px;
+   word-spacing:2px;
+   text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.socials_menu-horizontal{
+    position: relative;
+    display:flex ;
+    flex-direction: row;
+    justify-content: flex-end;
+    bottom: 10px;
+}
+.barra{
+    position: relative;
+    bottom: 50px;
+}
