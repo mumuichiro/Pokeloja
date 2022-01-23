@@ -1,0 +1,24 @@
+{
+  "name": "pokeloja",
+  "version": "1.0.0",
+  "description": "Awari Pokeloja",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"sass --watch scss:css --style compressed"
+     
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mumuichiro/Pokeloja.git"
+  },
+  "author": "Salamandra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mumuichiro/Pokeloja/issues"
+  },
+  "homepage": "https://github.com/mumuichiro/Pokeloja#readme",
+  "dependencies": {
+    "sass": "^1.45.0"
+  }
+}

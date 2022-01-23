@@ -1,333 +1,124 @@
-*{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+*{box-sizing:border-box}
+body,html{padding:0;margin:0;font-family:Pokemon Solid;}
+.container{display:flex;justify-content:space-between;width:1200px;margin:auto}
+header .main-header{background:#cb0900;;padding:10px 0}
+header .main-header .container>div{display:flex;justify-content:space-between;align-items:center}
+header .main-header .store-title{ color:#fdcd01;font-size: 50px;text-shadow:5px 5px 3px #3100f8 }
+header .main-header .search{margin-left:15px}
+header .main-header .search-input{position:relative}
+header .main-header .search-input button{position:absolute;right:3px;top:3px}
+header .main-header .search-input input{padding:14px 30px 14px 15px;border:0;width:120px;border-radius:6px;transition:width .2s ease-in}
+header .main-header .search-input button{width:40px;height:40px;border:0;background:url("../images/search-icon.png") no-repeat center center;cursor:pointer}
+header .main-header .search-input input:focus{width:240px;outline:3px solid #e040fb}
+header .main-header .links{text-transform:uppercase;font-weight:700;padding:0;margin:0;display:flex;align-items:center;list-style-type:none}
+header .main-header .links li{margin-left:14px}
+header .main-header .links a{color:white;text-decoration:none;transition:all ease .2s}
+header .main-header .links a:hover{color:#fff}
+header .secondary-header{background:#000;padding:15px 0}
+header .secondary-header nav ul{display:flex;margin:0;padding:0;list-style-type:none}
+header .secondary-header nav ul li{border-right:solid 1px #efefef}
+header .secondary-header nav ul li:last-child{border-right:none}
+header .secondary-header nav a{color:#fff;text-decoration:none;font-size:18px;padding:0 10px;text-transform:uppercase;  transition: background .4s}
+header .secondary-header nav ul li:first-child a{padding-left:0}
+header .secondary-header nav a:hover{   background-color:red}
+.social-links{display:flex;margin:0;padding:0;list-style:none}
+.social-links a{font-size:20px;color:#fff;transition:all ease-in .2s}
+.social-links a:hover{color:#ab47bc}
+.social-links li{margin-left:10px}
+@media screen and (max-width: 768px){.container{width:100%;padding:0 15px;display:block}
+header .main-header .links{margin-top:0;position:absolute;right:15px;top:25px}
+header .main-header .container>div{display:block}
+header .main-header .search{margin-left:0;margin-top:10px}
+header .main-header .search-input input{width:100%}
+header .main-header .search-input input:focus{width:100%}
+header .secondary-header .container{width:auto;overflow-x:scroll;display:flex}
+header .secondary-header nav{display:inline}
+header .secondary-header nav ul li{white-space:nowrap}
+.poke-list{width:100%;grid-template-columns:1fr 1fr}
+aside{width:100%;flex:1;padding-left:0;margin-top:30px}}
+aside{padding-left:30px;width:25%}
+aside .poke-ads{display:block;height:250px;background-image:url("..css\mew.gif");background-size:cover;background-position:center center;position:relative}/*Nao estou conseguindo fazer o gif do mew aparecer */
+aside .poke-ads::before{content:" ";width:100%;height:100%;background:#000;opacity:.6;position:absolute;top:0;left:0}
+side .poke-ads>div{position:absolute;bottom:0;left:0;color:#fff;text-align:center;padding:10px;width:100%}
+aside .poke-ads .poke-ads-title{font-size:28px;font-weight:bold;margin:0}
+aside .poke-ads .poke-ads-description{font-size:12px}.top-pokes{margin-top:30px}
+.top-pokes h3{text-transform:uppercase;font-weight:bold;border-bottom:solid 1px #ddd;padding:10px 0;margin:0}
+.top-pokes ol{list-style-type:none;padding:0;margin:0}
+.top-pokes li{counter-increment:li;display:flex;align-items:center;padding:10px;border-bottom:solid 1px #eee;transition:all ease .3s;cursor:pointer}
+.top-pokes li:hover{background:#eee}
+.top-pokes li:last-child{border-bottom:0}
+.top-pokes span{font-size:20px;font-weight:300}
+.top-pokes li::before{content:counter(li) "º";font-size:36px;font-weight:bold;line-height:0}
+.top-pokes .poke-img{width:50px;margin:0 8px}
+.newsletter{margin-top:30px;padding:30px 10px;background:#eee}
+.newsletter h4{text-transform:uppercase;font-weight:bold;margin-top:0;text-align:center}
+.newsletter input{padding:10px;border:0;width:100%}
+.newsletter button{border:0;padding:10px;width:100%;background:#000;color:#fff;margin-top:15px}
+footer{padding-top:30px;background:#000}
+footer .container{justify-content:space-between}
+footer .footer-nav li{margin-bottom:10px}
+footer .footer-nav a{font-size:20px;color:#fff;text-decoration:none}
+footer .footer-nav a:hover{color:#ffde00}
+footer .copyright{background:#333;text-align:center;margin-top:30px;color:#fff;padding:20px 0}
+footer .top-pokes{margin-top:0;color:#fff}
+footer .top-pokes li:hover{color:#000;background:#fff}
+.content-section{padding:30px 0}
+.poke-list{display:grid;gap:20px;grid-template-columns:1fr 1fr 1fr 1fr}
+.poke-list .poke-img{max-width:100%}
+.poke-list .poke{transition:all ease .3s;text-align:center;padding:10px;border:solid 1px #ddd}
+.poke-list .poke:hover{background:#eee}
+.poke-list .poke h2{margin:10px 0}
+.poke-list .poke .price-from{text-decoration:line-through;font-size:16px;color:#999;margin-top:0;margin-bottom:5px}
+.poke-list .poke .price-to{font-size:22px;margin-top:0;margin-bottom:10px;color:#00c853;font-weight:700}
+.poke-list .poke-buy-btn{width:100%;border:0;padding:15px 5px;background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);background-size:400% 400%;font-size:16px;text-transform:uppercase;font-weight:bold;border-radius:8px;cursor:pointer;color:#fff;display:flex;align-items:center;justify-content:center}
+.poke-list .poke-buy-btn img{width:22px;margin-right:8px}
+.pagination{margin-top:30px;display:flex;justify-content:space-between}
+.pagination button{cursor:pointer;padding:10px 20px;border:0;font-size:20px}
+@keyframes pokeBuyBtnAnimation{0%{background-position:0% 50%}50%{background-position:100% 50%}
+100%{background-position:0% 50%}}
+.poke-list .poke:hover .poke-buy-btn{animation:pokeBuyBtnAnimation 5s ease infinite}
+@media screen and (max-width: 1200px){.container{width:100%}
+.poke-list{width:65%;grid-template-columns:1fr 1fr 1fr}
+aside{padding-left:30px;width:35%}}
 
-h1 {
-    background-color: #cb0900;
-}
-h1{
-    font-family:Pokemon Solid;
-    color:#fdcd01;
-    font-size: 50px;
-    text-shadow:5px 5px 3px #3100f8  ;
-}
-
-.menu_horizontal{
-    list-style-type:none;
-    padding:0;
-    background-color:black ;
-    margin: 0px;
-    box-sizing: border-box;
-  
-
-}
-.menu_horizontal li{
-    display:inline;
-    color:whitesmoke;
-    display:inline;
-
-}
-.menu_horizontal li a{
-    color:#FFF;
-    padding:20px;
-    display: inline-block;
-    text-decoration:none;
-   transition: background .4s;
-
- 
-
-}
-.menu_horizontal li a:hover{
-    background-color:red;
-    
-
-}
-.pokemon p{
-    background-color: black;
-    color: white;
-    font-family:Pokemon Solid;
-    padding: 5px 10px;
-   
-}
-#pokemons{
-    border: 2px solid #9b9494;
-    border-radius: 5px;
-    padding: 15px 25px;
+.pokemon_lista{
+    background-color: white;
+    font-size: 15px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    float:left;
-   
- 
+    flex-wrap: wrap;
+    padding: 10px;
+    align-content: center;
+
 }
-.pokemon{
-    border:1px solid black;
-    margin-bottom: 20px;
+.pokemon_lista .pokemon{
+    border: 2px solid  :#000;
+    border-radius:20px; /*A border nao esta sendo upada no css */
+    margin:10px 5px 5px 16px;
+    padding:10px;
+    text-align:center;
+}
+.pokemon_lista img{
+    max-width: 180px;
 }
 
-header{
-    font-family:Pokemon Solid;
-    color: black;
+@font-face {
+    font-family:'Pixel' ;
+    src: url('PressStart2p.ttf');
 }
-.produto{
-    width: 80px;
-    margin-bottom: 5px;
-    
+.pokemon_lista button{
+    cursor: pointer;
+    font-family:'Pixel'; /*a fonte nao esta sendo atualizada */
+    border-radius: 50px;
+    width: 215px;
+    height: 50px;
+    border-color: black;
+    background-color: black;
+    font-size: 20px;
+    color:white;
+   transition: 3s;
 }
 .pokebola{
     width: 20px;
     height: 20px;
  
-}
-
-.cabecalho{
-    display: flex;
-    flex-direction:row;
-    align-items: flex-end;
-    justify-content: space-between;
-   background-color: #cb0900;
-   align-content: center;
-   margin-left: auto;
-   margin-right: 1.21rem;
-   padding: 20px;
-  
-   font-size: 15px;
-   
-
-}
-.upper{
-    display: flex;
-    background-color: #cb0900;
-    align-items: center;
-    justify-content: space-between;
-}
-.upperleft{
-    background-color: #cb0900;
-    margin-right: auto;
-    margin-left: 1.21rem;
-}
-.cabecalho a{
-    padding: 5px;
-    color:#fdcd01;
-
-}
-.search_bar{  
-    position:relative;
-    bottom:20px;
-    margin-top: 35px;
-    display: inline-flex;
-    float: right;
-  }
-  .main_area{
-    position: relative;
-    right:250px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: white;
-    width: 1100px;
-    margin: 0 auto;
-    align-items: center;
-    flex-wrap: wrap
-}
-.display_area{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 15px;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-
- 
-}
-.pokemons{
-    border: 2px solid #9b9494;
-    border-radius: 5px;
-    padding: 15px 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-main {
-    width: 300px;
-    height: 200px;
-    display: grid;
-   
-}
-aside{
-    width: 150px;
-    height: 100px;
-    
-}
-
-.aside_section {
-    position:relative;
-    bottom: 100px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     
-}
-.aside_lendarios{
-    display: flex;
-    flex-direction: column;
-}
-.aside_lendarios_title{
-    font-size: 16px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #9b9494;
-    margin-top: 50px;
-    padding-right: 90px;
-    padding-bottom: 5px;
-}
-.aside_lendarios ol li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20px;
-}
-.aside_lendarios ol li .position {
-    font-family:  Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-}
-.aside_lendarios ol li img {
-    width: 60px;
-    margin-left: 10px;
-    margin-left: 5px;
-}
-.aaside_lendarios ol li p {
-    font-size: 20px;
-    margin-left: 5px;
-}
-.form {
-    background-color: #cb0900;
-    width: 220px;
-    height: 180px;
-    margin-top: 40px;
-    border-radius: 5px;
-    box-shadow: #9b9494 3px 3px 5px;
-}
-.form-title {
-    text-align: center;
-    margin: 10px;
-    margin-bottom: 15px;
-}
-form .label {
-    font-size: 16px;
-    font-family:  Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-    margin-left: 10px;
-}
-form .email {
-    height: 23px;
-    width: 190px;
-    margin-left: 10px;
-    margin-top: 5px;
-}
-form .button {
-    height: 30px;
-    width: 190px;
-    margin-left: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 2px solid #9b9494;
-    box-shadow: #9b9494 3px 3px 2px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:black;
-    color: #ffffff;
-}
-footer{
-    background: black;
-    position: relative;
-    top: 450px;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: auto;
-    font-family: "Open Sans";
-    padding-top: auto;
-    color:white;
-}
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.footer-content h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-.footer-content p{
-     max-width: 500px;
-     margin:10px auto;
-     line-height: 28px;
-     font-size: 14px;
-}
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-
-}
-.socials li{
-    margin:0 10px;
-
-}
-.socials a{
-    text-decoration: none;
-    color: white;
-
-}
-.socials a i{
-    font-size: 1.1rem;
-    transition:color .4s ease;
-
-}
-.socials a:hover i{
-    color:white;
-    
-}
-.footer-bottom{
-    background: black;
-    width: 100vw;
-    padding:20px 0;
-    text-align: center;
-
-}
-.footer-bottom {
-   font-size:14px;
-   word-spacing:2px;
-   text-transform: capitalize;
-}
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
-.socials_menu-horizontal{
-    position: relative;
-    display:flex ;
-    flex-direction: row;
-    justify-content: flex-end;
-    bottom: 10px;
-}
-.barra{
-    position: relative;
-    bottom: 50px;
 }
