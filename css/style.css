@@ -49,7 +49,7 @@ aside .poke-ads .poke-ads-description{font-size:12px}.top-pokes{margin-top:30px}
 .top-pokes li:last-child{border-bottom:0}
 .top-pokes span{font-size:20px;font-weight:300}
 .top-pokes li::before{content:counter(li) "º";font-size:36px;font-weight:bold;line-height:0}
-.top-pokes .poke-img{width:50px;margin:0 8px}
+.top-pokes .poke-img{width:100px;margin:0 8px}
 .newsletter{margin-top:30px;padding:30px 10px;background:#eee}
 .newsletter h4{text-transform:uppercase;font-weight:bold;margin-top:0;text-align:center}
 .newsletter input{padding:10px;border:0;width:100%}
@@ -91,7 +91,7 @@ aside{padding-left:30px;width:35%}}
 
 }
 .pokemon_lista .pokemon{
-    border: 2px solid  :#000;
+    border: 2px solid  :#000;/* alguns pokemons nao estao alinhados, nao sei o motivo mas apenas ap rimeira fileira saiu alinhada*/
     border-radius:20px; /*A border nao esta sendo upada no css */
     margin:10px 5px 5px 16px;
     padding:10px;
