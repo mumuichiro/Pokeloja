@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css\style.css"g>
-    <script src="" defer></script>
-    <script src="" defer></script>
+   
     <title>PokéLoja - Garanta o seu Pokémon!</title>
 </head>
 
@@ -152,8 +151,8 @@
                     </a>
                 </div>
                 <div class="pokemon">
-                    <a href=""><img src="css\megacharizardx.png" alt="Charizard">
-                        <p>Charizard</p>
+                    <a href=""><img src="css\megacharizardx.png" alt="Mega Charizard X">
+                        <p>Mega Charizard X</p>
                         <p class="oldvalue">R$ 1111.11</p>
                         <p>R$ 5.90</p>
                         <button data-id="9" class="poke-buy">Comprar</button>
@@ -161,11 +160,38 @@
                     </a>
                 </div>
                 <div class="pokemon">
-                    <a href=""><img src="css\megacharizardx.png" alt="Charizard">
-                        <p>Charizard</p>
+                    <a href=""><img src="css\Squirtle.png" alt="Squirtle">
+                        <p>Squirtle</p>
                         <p class="oldvalue">R$ 1111.11</p>
                         <p>R$ 5.90</p>
                         <button data-id="10" class="poke-buy">Comprar</button>
+
+                    </a>
+                </div>
+                <div class="pokemon">
+                    <a href=""><img src="css\wartortle.png" alt="Wartortle">
+                        <p>Wartortle</p>
+                        <p class="oldvalue">R$ 1111.11</p>
+                        <p>R$ 5.90</p>
+                        <button data-id="11" class="poke-buy">Comprar</button>
+
+                    </a>
+                </div>
+                <div class="pokemon">
+                    <a href=""><img src="css\Blastoise.png" alt="Blastoise">
+                        <p>Blastoise</p>
+                        <p class="oldvalue">R$ 1111.11</p>
+                        <p>R$ 5.90</p>
+                        <button data-id="12" class="poke-buy">Comprar</button>
+
+                    </a>
+                </div>
+                <div class="pokemon">
+                    <a href=""><img src="css\megablastoise.png" alt="Blastoise">
+                        <p>Blastoise</p>
+                        <p class="oldvalue">R$ 1111.11</p>
+                        <p>R$ 5.90</p>
+                        <button data-id="13" class="poke-buy">Comprar</button>
 
                     </a>
                 </div>
@@ -174,7 +200,7 @@
                         <p>Charizard</p>
                         <p class="oldvalue">R$ 1111.11</p>
                         <p>R$ 5.90</p>
-                        <button data-id="11" class="poke-buy">Comprar</button>
+                        <button data-id="14" class="poke-buy">Comprar</button>
 
                     </a>
                 </div>
@@ -183,7 +209,7 @@
                         <p>Kadabra</p>
                         <p class="oldvalue">R$ 1111.11</p>
                         <p>R$ 5.90</p>
-                        <button data-id="12" class="poke-buy">Comprar</button>
+                        <button data-id="15" class="poke-buy">Comprar</button>
 
                     </a>
                 </div>
@@ -192,7 +218,7 @@
                         <p>Alakazam</p>
                         <p class="oldvalue">R$ 1111.11</p>
                         <p>R$ 5.90</p>
-                        <button data-id="13" class="poke-buy">Comprar</button>
+                        <button data-id="16" class="poke-buy">Comprar</button>
 
                     </a>
                 </div>
@@ -207,6 +233,17 @@
             </main>
 
             <aside>
+                <div id = "menu_opener" onclick="menuToggle()">
+                    <img src="css\188918.png"  width ="60"/>
+                </div>
+            <div id="menu_area" style= "width: 0px" >
+                  <ul>
+                      <li>Home</li>
+                      <li>Categorias</li>
+                      <li>Top Pokemons</li>
+                      <li>Blog</li>
+                      </ul>
+              </div> 
                 <section class="poke-ads">
                   
                     <div>
@@ -248,6 +285,7 @@
                     <input type="text" placeholder="Seu-email">
                     <button>Cadastrar</button>
                 </section>
+                
             </aside>
         </div>
     </section>
@@ -262,7 +300,7 @@
             </ul>
 
             <section class="top-pokes">
-                <h3>Top Pokémons</h3>
+                <h3>Shinys </h3>
                 <ol>
                     <li>
                         <img class="poke-img"
@@ -307,6 +345,7 @@
             PokéLoja. Todos os direitos reservados.
         </div>
     </footer>
+    <script src ="js\script.js"></script>
 </body>
 
 </html>
