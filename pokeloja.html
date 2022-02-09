@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
- <link href="css\Pokemon Solid\Pokemon Solid.ttf" rel="stylesheet" type="text/css"/> 
+ <link href="css\Pokemon Solid.ttf" rel="stylesheet" type="text/css"/> 
   
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css\style.css"g>
-   
+    <link rel="stylesheet" href="css\style.css">
+    <script src ="js\script2.js" defer></script>
     <title>PokéLoja - Garanta o seu Pokémon!</title>
 </head>
 
@@ -72,215 +72,71 @@
             </div>
         </div>
     </header>
-
-    <section class="content-section">
-        <div class="container">
-            <main>
-                <div class="pokemon_lista">
-                    <div class="pokemon">
-                        <a href=""><img src="css\bulbassaur.png" alt="Bulbassaur">
-                            <p>Bulbassaur</p>
-                            <p class="oldvalue">R$ 1111.11</p>
-                            <p>R$ 5.90</p>
-                            <button data-id="1" class="poke-buy">Comprar</button>
-    
-                        </a>
-                    </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\ivysaur.png" alt="Ivysaur">
-                        <p>Ivysaur</p>
+    <div class="container">
+        <main class="pokemon_lista">
+        <div class="pokemon">
+                    <a href=""><img src="css\bulbassaur.png" alt="Bulbassaur">
+                        <p>Bulbassaur</p>
                         <p class="oldvalue">R$ 1111.11</p>
                         <p>R$ 5.90</p>
-                        <button data-id="2" class="poke-buy">Comprar</button>
+                        <button data-id="1" class="poke-buy">Comprar</button>
 
                     </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\venusaur.png" alt="Venusaur">
-                        <p>Venusaur</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="3" class="poke-buy">Comprar</button>
+                </div> 
 
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\megavenusaur.png" alt="MegaVenusaur">
-                        <p>Mega Venusaur</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="4" class="poke-buy">Comprar</button>
+            </div>
+           
 
-                    </a>
-                </div>
+            
+            <div class="pagination">
                 
-                <div class="pokemon">
-                    <a href=""><img src="css\Charmander.png" alt="Charmander">
-                        <p>Charmander</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="5" class="poke-buy">Comprar</button>
+                <button class="btn-ant">Página anterior</button>
+                <button class="btn-prox">Próxima página</button>
 
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\Charmeleon.png" alt="Charmeleon">
-                        <p>Charmeleon</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="6" class="poke-buy">Comprar</button>
-
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\Charizard.png" alt="Charizard">
-                        <p>Charizard</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="7" class="poke-buy">Comprar</button>
-
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\megacharizardy.png" alt="Mega Charizard Y">
-                        <p>Mega Charizard Y</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="8" class="poke-buy">Comprar</button>
-
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\megacharizardx.png" alt="Mega Charizard X">
-                        <p>Mega Charizard X</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="9" class="poke-buy">Comprar</button>
-
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\Squirtle.png" alt="Squirtle">
-                        <p>Squirtle</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="10" class="poke-buy">Comprar</button>
-
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\wartortle.png" alt="Wartortle">
-                        <p>Wartortle</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="11" class="poke-buy">Comprar</button>
-
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\Blastoise.png" alt="Blastoise">
-                        <p>Blastoise</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="12" class="poke-buy">Comprar</button>
-
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\megablastoise.png" alt="Blastoise">
-                        <p>Blastoise</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="13" class="poke-buy">Comprar</button>
-
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\abra.png" alt="Abra">
-                        <p>Charizard</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="14" class="poke-buy">Comprar</button>
-
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\kadabra.png" alt="Kadabra">
-                        <p>Kadabra</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="15" class="poke-buy">Comprar</button>
-
-                    </a>
-                </div>
-                <div class="pokemon">
-                    <a href=""><img src="css\alakazam.png" alt="Alakazam">
-                        <p>Alakazam</p>
-                        <p class="oldvalue">R$ 1111.11</p>
-                        <p>R$ 5.90</p>
-                        <button data-id="16" class="poke-buy">Comprar</button>
-
-                    </a>
-                </div>
-
-                
-
-                </div>
-                <div class="pagination">
-                    <button class="btn-ant">Página anterior</button>
-                    <button class="btn-prox">Próxima página</button>
-                </div>
-            </main>
-
-            <aside>
-                <div id = "menu_opener" onclick="menuToggle()">
-                    <img src="css\188918.png"  width ="60"/>
-                </div>
-            <div id="menu_area" style= "width: 0px" >
-                  <ul>
-                      <li>Home</li>
-                      <li>Categorias</li>
-                      <li>Top Pokemons</li>
-                      <li>Blog</li>
-                      </ul>
-              </div> 
-                <section class="poke-ads">
+            </div>
+        </main>
+   
+         <aside  >
+            
+               <section class="poke-ads">
                   
-                    <div>
-                        <p class="poke-ads-title">
-                            Shinys
-                        </p>
-                        <p class="poke-ads-description">
-                          Os melhores pokemons você encontra aqui.
-                        </p>
-                    </div>
+                   <div>
+                    <p class="poke-ads-title">
+                        Shinys
+                    </p>
+                    <p class="poke-ads-description">
+                      Os melhores pokemons você encontra aqui.
+                    </p>
+
+                   </div>
+                      
+                    </section>
+                
+                        <section class="topPokemon">  
+                            <h3>Trios Lendários</h3>
+                            <ol>
+                                <li>
+                                    <img class="poke-img"
+                                src="css\legendarybirds.png"
+                                alt="Trio Voador">
+                                    <span>Trio Voador</span>
+                                </li>
+                                <li>
+                                    <img class="poke-img"
+                                src="css\legendarybeast.png"
+                                alt="Bestas Lendarias">
+                                    <span>Bestas Lendarias</span>
+                                </li>
+                                <li>
+                                    <img class="poke-img"
+                                src="css\trio.png"
+                                alt="Trio Ancião">
+                                    <span>Trio Ancião</span>
+                                </li>
+                            </ol>
                 </section>
 
-                <section class="top-pokes">
-                    <h3>Trios Lendários</h3>
-                    <ol>
-                        <li>
-                            <img class="poke-img"
-                        src="css\legendarybirds.png"
-                        alt="Trio Voador">
-                            <span>Trio Voador</span>
-                        </li>
-                        <li>
-                            <img class="poke-img"
-                        src="css\legendarybeast.png"
-                        alt="Bestas Lendarias">
-                            <span>Bestas Lendarias</span>
-                        </li>
-                        <li>
-                            <img class="poke-img"
-                        src="css\trio.png"
-                        alt="Trio Ancião">
-                            <span>Trio Ancião</span>
-                        </li>
-                    </ol>
-                </section>
-
-                <section class="newsletter">
+                <section class="newsletter" >
                     <h4>Receba nossas novidades</h4>
                     <input type="text" placeholder="Seu-email">
                     <button>Cadastrar</button>
@@ -299,26 +155,20 @@
                 <li><a href="#">Blog</a></li>
             </ul>
 
-            <section class="top-pokes">
+            <section class="shinys">
                 <h3>Shinys </h3>
                 <ol>
                     <li>
-                        <img class="poke-img"
-                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png"
-                    alt="Squirtle">
-                        <span>Squirtle</span>
+                        <img  src="css\Gyarados-Shiny.png"alt="Gyarados">
+                        <span>Gyarados</span>
                     </li>
                     <li>
-                        <img class="poke-img"
-                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png"
-                    alt="Pikachu">
-                        <span>Pikachu</span>
+                        <img src="css\moltres.png" alt="Moltres">
+                        <span>Moltres</span>
                     </li>
                     <li>
-                        <img class="poke-img"
-                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/4.png"
-                    alt="Charmander">
-                        <span>Charmander</span>
+                        <img src="css\lapras.png" alt="Lapras">
+                        <span>Lapras</span>
                     </li>
                 </ol>
             </section>
@@ -341,10 +191,13 @@
                 </li>
             </ul>
         </div>
-        <div class="copyright">
-            PokéLoja. Todos os direitos reservados.
-        </div>
+  
     </footer>
+    <section class="carrinho">
+
+        
+    </section>
+    
     <script src ="js\script.js"></script>
 </body>
 
